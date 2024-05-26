@@ -1,15 +1,20 @@
+<!-- 
+    We have to add some html line to say we want to take in account other devices (mobile and tablets)
+
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ -->
+
+
 <!DOCTYPE html>
 
 <html lang="en">
     <head>
         <title>Chocolate cake</title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="recipe.css">
 
-        <!-- Internal css -->
-        <!-- <style>
-            
-        </style> -->
     </head>
     
     <body>
@@ -22,33 +27,12 @@
             <h1>Chocolate cake</h1>
             <div class="separator"></div>
                 
-
-                <!-- Inline css -->
-                <!-- <p>Here is a easy version of the <span style="color: blueviolet;">classic</span> Chocolate Cake recipe. Enjoy!</p> -->
-                
-                <!-- When we gave max-width of 400px to this paragraph, the text will be aligned to it, 
-                    but it will look like it's aligned to the left
-                    Best practice is to use background color to debug -->
-
-                <!-- We will put the paragraph into a <div> to fix the problem. We will put a paragraph 
-                    into the div and use display: inline-block; to center our paragraph -->
-                
                 <div class="center">
                     <p class="description">"This chocolate cake is a classic. This version of the recipe is fast and quick and your kids will LOVE IT!"</p>
                 </div>
 
                 <div class="info">
 
-                    <!-- To use position to place our table, we will put the image and the table in the same <div> -->
-
-                        <!-- When using relative position, we cam than use top, bottom... -->
-                        <!-- background-color: #6c829d-c0; last 2 digits are for opacity -->
-
-                        <!-- ?id=999   ===  your browser thinks it's maybe a different file, but he's going to load exactly the same thing.
-                                            It's just to force him to download the image and not take it from the cache  -->
-
-                    
-                        <!-- <img class="center info" src="https://jonathanroux.com/cake.jpg?id=999"> -->
                         <img class="center info" src="cake.jpg">
                             <table class="info">
 
@@ -68,7 +52,6 @@
                             </table>
                 </div>
 
-                <!-- To fix the problem with overflow (css, ln 72), we will use another div for INGREDIENTS and INSTRUCTIONS and it will be in the overflow: auto; again -->
                 <div>
                     <div class="col1 col">
                         <h2>Ingredients</h2>
@@ -95,11 +78,4 @@
         </div>
     </body>
 </html>
-
-
-<!-- 
-    ***PUBLISHING*** 
-
-We will publish it on a free host (GitHub Pages). It is free and it's going to work, but if we have proper backend it won't
--->
 
